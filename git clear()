@@ -1,0 +1,13 @@
+[1mdiff --git a/event.html b/event.html[m
+[1mindex 13fe519..99a88be 100644[m
+[1m--- a/event.html[m
+[1m+++ b/event.html[m
+[36m@@ -16,7 +16,7 @@[m
+   </label>[m
+ </div>[m
+ <div class="right">[m
+[31m-[m
+[32m+[m[32mjjnj[m
+     right[m
+ </div>[m
+  [m

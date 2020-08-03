@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resume.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>my webisite</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resume.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
 </head>
 <body>
-     <div class="resume-container">
+  <nav>
+    <img class="logo" src="images/download (2).png" alt="">
+    <div>
+      <ul class="tab">
+     
+        
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">
+          <i class="fa fa-home" style="font-size: 45px; "></i>
+        </a></li>
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">
+          <i class="fa fa-briefcase" style="font-size: 45px; "></i></i>
+        </a></li>
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'Tokyo')">
+          <i class="fa fa-user-secret" style="font-size: 45px;"></i>
+        </a></li>
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'italy')">
+          <i class="fa fa-phone-square" style="font-size: 45px;"></i>
+        </a></li>
+        <li><a href="#" class="tablinks" onclick="openCity(event, 'spain')">
+          <i class="fa fa-file-code-o" style="font-size: 45px;"></i>
+        </a></li>
+    
+      </ul>
+    </div>
+  <div class="social-media">
+    <li><a href=""><i class="fa fa-facebook" style="font-size: 25px; " ></i></a></li>
+    <li><a href=""><i class="fa fa-twitter-square"style="font-size: 25px; "  ></i></a></li>
+    <li><a href=""><i class="fa fa-git-square" style="font-size: 25px; " ></i></a></li>
+    <li><a href=""><i class="fa fa-linkedin-square" style="font-size: 25px; " ></i></a></li>
+  </div>
+  </nav>
+
+  <div id="London" class="tabcontent">
+    <h1>Hi</h1>
+      <p>I'm Onyebuchi Paul Front-End developer</p>
+      <p>i design & build user interfaces. </p>
+      <button class="contact-us-btn">contact us</button>
+         <button id="myBtn">My Resume</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">x</span>
+       <div class="resume-container">
         <span class="resume-btn"> <i class="fa fa-suitcase"></i>OBJECTIVE</span>
         To take a challenging role as Front End Web Developer in a highly technical company where I could utilize my skills in Web Design, Front-End Web Development, Software, and CMS/e-Commerce and use these skills in providing quality service to the company.
 
@@ -64,6 +109,232 @@
        </ul>           
 
      </div>
+  </div>
 
+</div>
+    </div>
+  
+  <div id="Paris" class="tabcontent">
+    <h1>Paris</h1>
+    <p>Paris is the capital of France.</p>
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <h2>ABOUT</h2>
+   <h1>onyebuch paul</h1>
+   <p>Front-end developers are experts in the practice of creating HTML, CSS, JavaScript, and more for a website or web application while keeping an eye on UI and UX. The questions presented in this guide help identify those front-end developers with the experience to produce masterful results.</p>
+        <!-- Trigger/Open The Modal -->
+<button id="myBtnContact">My Resume</button>
+
+<!-- The Modal -->
+<div id="myModalContact" class="modalContact">
+
+  <!-- Modal content -->
+  <div class="modal-contentContact">
+    <span class="closeContact">x</span>
+    <div class="resume-container">
+        <span class="resume-btn"> <i class="fa fa-suitcase"></i>OBJECTIVE</span>
+        To take a challenging role as Front End Web Developer in a highly technical company where I could utilize my skills in Web Design, Front-End Web Development, Software, and CMS/e-Commerce and use these skills in providing quality service to the company.
+
+     </div>
+     <div class="resume-container">
+        <span class="resume-btn"> <i class="fa fa-map-marker"></i>CONTACT</span>
+         <ul>
+       <li> <i class="fa fa-phone" style="margin-right: 5px;"></i>070-324-938-55</li>
+       <li> <i class="fa fa-envelope" style="margin-right: 5px;"></i>onyebuchiokofu@gmai.com</li>
+          <li> <i class="fa fa-address-book" style="margin-right: 10px;"></i>ile eleye, igboho, oyo state</li>
+    </ul>
+       
+         
+       
+     </div>
+     <div class="resume-container">
+        <span class="resume-btn"> <i class="fa fa-graduation-cap"></i>EDUCATION</span>
+          <ul>
+              <li>2016-2018 Higher National Diploma(Electrical Electronic Enginnering)</li>
+                  federal polytechnic auchi
+                  <li>2014-2016 Ordinary National Diploma </li>
+                  delta state polytedchnic ogwashi -uku
+                  <li></li>
+          </ul>
+     </div>
+     <div class="resume-container">
+        <span class="resume-btn"> <i class="fa fa-cog"></i>SKILLS</span>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Vanila Javascript</li>
+                <li>Jquery</li>
+                <li>Bootstrap 3/4</li>
+                  <li>React JS</li>
+                 <li>Php/Mysql</li>
+            </ul> 
+
+     </div>
+     <div class="resume-container">
+        <span class="resume-btn"> <i class="fa fa-black-tie"></i>EXPERIENCE</span>
+       <ul>
+           <li>code360(intenship - 3month)</li>
+             <!--i made a chages here-->
+       </ul>           
+              
+     </div>
+     <div class="resume-container">
+        <span class="resume-btn"> <i class="fa fa-file-text-o"></i>CERFIFICATE</span>
+       <ul>
+           <li>NYSC Certificate</li>
+           <li>Project management</li>
+           <li>Front End Development (HNG5)</li>
+       </ul>           
+
+     </div>
+  </div>
+
+</div>
+  </div>
+  <div id="italy" class="tabcontent">
+    <h1>Contact me</h1>
+    <div>
+       <h3>write a message</h3>
+
+            <div>
+                <h4>myn profile in social media</h4>
+                
+                <ul>
+                  <li><a href=""><i class="fa fa-twitter-square"style="font-size: 15px; "  ></i></a></li>
+                  <li><a href=""><i class="fa fa-twitter-square"style="font-size: 15px; "  ></i></a></li>
+                  <li><a href=""><i class="fa fa-git-square" style="font-size: 15px; " ></i></a></li>
+                  <li><a href=""><i class="fa fa-linkedin-square" style="font-size: 15px; " ></i></a></li>
+                </ul>
+            </div>
+    </div>
+    <div> 
+      <input type="text">
+      <input type="email" name="" id="">
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    
+    <button>send a message</button></div>
+  </div>
+  <div id="spain" class="tabcontent">
+    <h5 class="myskill-heading">My Skill-Box</h5>
+       
+<ul>
+
+      <li>HTML5 <br />
+      
+      <progress min="0" max="100" value="90"></progress>
+                 
+         </li>
+                     
+     
+     
+     <li>JavaScript <br />
+                         
+     <progress min="0" max="100" value="75"></progress>
+        
+        </li>
+        <li>React Js <br />
+                         
+          <progress min="0" max="100" value="50"></progress>
+             
+             </li>
+             <li>Bootstrap3/4 <br />
+                         
+              <progress min="0" max="100" value="45"></progress>
+                 
+                 </li>
+           
+     <li>Php <br />
+             
+                 
+     <progress min="0" max="100" value="30">20%</progress>
+     
+     
+     </li>
+                 
+     </ul> 
+        
+     
+  </div>
+
+  <section id="section">
+    <h1>Hi</h1>
+    <p>I'm Onyebuchi Paul Front-End developer</p>
+    <p>i design & build user interfaces. </p>
+    <button class="contact-us-btn">contact us</button>
+            <!-- Trigger/Open The Modal -->
+<button id="myBtna">My Resume</button>
+
+<!-- The Modal -->
+<div id="myModala" class="modala">
+
+<!-- Modal content -->
+<div class="modal-contenta">
+  <span class="closea">x</span>
+  <div class="resume-container">
+      <span class="resume-btn"> <i class="fa fa-suitcase"></i>OBJECTIVE</span>
+      To take a challenging role as Front End Web Developer in a highly technical company where I could utilize my skills in Web Design, Front-End Web Development, Software, and CMS/e-Commerce and use these skills in providing quality service to the company.
+
+
+   </div>
+   <div class="resume-container">
+      <span class="resume-btn"> <i class="fa fa-map-marker"></i>CONTACT</span>
+       <ul>
+     <li> <i class="fa fa-phone" style="margin-right: 5px;"></i>070-324-938-55</li>
+     <li> <i class="fa fa-envelope" style="margin-right: 5px;"></i>onyebuchiokofu@gmai.com</li>
+        <li> <i class="fa fa-address-book" style="margin-right: 10px;"></i>ile eleye, igboho, oyo state</li>
+  </ul>
+     
+       
+     
+   </div>
+   <div class="resume-container">
+      <span class="resume-btn"> <i class="fa fa-graduation-cap"></i>EDUCATION</span>
+        <ul>
+            <li>2016-2018 Higher National Diploma(Electrical Electronic Enginnering)</li>
+                federal polytechnic auchi
+                <li>2014-2016 Ordinary National Diploma </li>
+                delta state polytedchnic ogwashi -uku
+                <li></li>
+        </ul>
+   </div>
+   <div class="resume-container">
+      <span class ="resume-btn"> <i class="fa fa-cog"></i>SKILLS</span>
+          <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Vanila Javascript</li>
+              <li>Jquery</li>
+              <li>Bootstrap 3/4</li>
+                <li>React JS</li>
+               <li>Php/Mysql</li>
+          </ul> 
+
+   </div>
+   <div class="resume-container">
+      <span class="resume-btn"> <i class="fa fa-black-tie"></i>EXPERIENCE</span>
+     <ul>
+         <li>code360(intenship - 3month)</li>
+         <li>hng5(intenship  -  3moth)</li>
+     </ul>           
+            
+   </div>
+   <div class="resume-container">
+      <span class="resume-btn"> <i class="fa fa-file-text-o"></i>CERFIFICATE</span>
+     <ul>
+         <li>NYSC Certificate</li>
+         <li>Project management</li>
+         <li>Front End Development (HNG5)</li>
+     </ul>           
+
+   </div>
+</div>
+
+</div>
+
+
+
+   </section>
+<script src="demo.js"></script>
 </body>
 </html>
