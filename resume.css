@@ -1,193 +1,96 @@
-nav{
-    display: flex;
-    align-items: center;
-        justify-content: space-around;
-    width: 95%;
-    margin: auto;
-    
-}
-.social-media,
-.social-media ul li
-
-{
-    display: flex;
-    width:400px;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-}
-.logo{
-   
-}
-/* Style the list */
-ul.tab {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    width: 1000px;
-    padding: 0;
-    overflow: hidden;
-   
-
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  padding-left: 200px;
 }
 
-/* Float the list items side by side */
-ul.tab li {float: left;}
-
-/* Style the links inside the list items */
-ul.tab li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    margin-left: 30px;
-    font-size: 17px;
+/* Links inside the navbar */
+.navbar a {
+  float: none;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 86px;
+  text-decoration: none;
+  display: block;
 }
 
-/* Change background color of links on hover */
-ul.tab li a:hover {background-color: #ddd;}
-
-/* Create an active/current tablink class */
-ul.tab li a:focus, .active {background-color: #ccc;}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+/* The dropdown container */
+.dropdown {
+  float: bone;
+  overflow: hidden;
 }
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 40px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
 
-/* The Modal (background) */
-.modala {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-/* Modal Content/Box */
-.modal-contenta {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+/* Mega Menu header, if needed */
+.dropdown-content .header {
+ 
+  color: white;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-/* The Close Button */
-.closea {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.closea:hover,
-.closea:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-.closeContact {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+/* Create three equal columns that floats next to each other */
+.column {
+  float: none;
+  width: 22.22%;
+  padding: 10px;
+ margin-left: 150px;
+  height: 250px;
+  text-align: center;
 }
 
-.closeContact:hover,
-.closeContact:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-.modalContact {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/* Style links inside the columns */
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  text-align: center;
 }
 
-/* Modal Content/Box */
-.modal-contentContact {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+/* Add a background color on hover */
+.column a:hover {
+  background-color: #ddd;
 }
 
-.resume-container{
-    color: crimson;
-    line-height:30px;
-    font-size: 20px;
-}
-.resume-container ul li{
-    list-style: none;
-}
-.resume-btn{
-    width: 100%;
-    height: 40px;
-    background-color: blue;
-    display: block;
-    color: cornsilk;
-    font-size: 20px;
-    border: none;
-    outline: none;
-    margin-top: 20px;
-    padding-top: 20px;
-}
-.resume-btn i {
-    padding-right: 10px;
-    margin-left: 20px;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
