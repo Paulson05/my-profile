@@ -2,8 +2,6 @@
   var darkmodebtn = document.querySelector(".darkmodebtn");
   var right = document.querySelector(".right");
   var left = document.querySelector(".left");
-  var vertical = document.querySelector(".vertical");
-  var vertical2 = document.querySelector(".vertical2");
   darkmodebtn.addEventListener("click", function(){ 
     left.classList.toggle("dark-mode");
     right.classList.toggle("dark-mode2");
