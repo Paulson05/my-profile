@@ -200,6 +200,12 @@ textarea, input{
   border: 1px solid #888;
   width: 70%; /* Could be more or less, depending on screen size */
 }
+.social-media ul li {
+  list-style: none;
+  margin-right:  120px;
+
+
+}
 
 /* The Close Button */
 .close {
@@ -291,7 +297,7 @@ input:checked + .slider:before {
   background-size: cover !important;
   height: 80vh;
   width: 100%;
-  color:red;
+  color:rgb(233, 224, 224);
 
 }
 .dark-mode3 {
@@ -379,5 +385,114 @@ progress::-moz-progress-bar {
   font-style: italic;
 }
 @media(min-width: 700px) {
+body{
+  background-color: red; 
+  color: black !important;
+}
+/* The side navigation menu */
 
+/* The side navigation menu */
+.sidenav {
+  height: 50px;
+  /*100%Full-height*/width: 100%;
+  overflow: hidden;
+  background-color: white;
+ 
+  
+}
+
+/* The navigation menu links */
+.sidenav a {
+ display: none;
+}
+.switchbtn{
+  display: none;
+}
+.social-media ul li{
+  background: yellow;
+  float: right;
+list-style: none;
+
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+nav{
+  background-color: white; /* Black*/
+
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+/* Position and style the close button (top right corner) */
+.closebtn a{
+display: none;
+
+  
+}
+.open{
+  display: none;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/*  */
+.logo{
+  width: 100%;
+}
+hr{
+  margin-top: 60px;
+  border:none;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/* Style the list */
+ul.tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: inline;
+
+  margin-left: 700px;
+
+}
+
+
+/* Float the list items side by side */
+ul.tab li {float: left;
+  margin-left: 100px;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+  display: inline-block;
+  color: black;
+ 
+  text-align: center;
+margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+  
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
 }
