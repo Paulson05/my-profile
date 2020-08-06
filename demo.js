@@ -12,7 +12,15 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
-
+var darkmodebtn = document.querySelector(".darkmodebtn");
+  var right = document.querySelector("body");
+  var left = document.querySelector("#mySidenav");
+  var nav = document.querySelector("nav");
+  darkmodebtn.addEventListener("click", function(){ 
+    left.classList.toggle("dark-mode");
+    right.classList.toggle("dark-mode2");
+  nav.classList.toggle("dark-mode3")
+  })
 function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -38,18 +46,14 @@ function openCity(evt, cityName) {
  // Get the modal
 var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var btn = document.getElementsByClassName("myBtn");
-var btnArr = [].slice.call(btn);
-console.log(btnArr[1]);
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn[1].onclick = function() {
+btn.onclick = function() {
     modal.style.display = "block";
-    console.log("fire2 ")
+    
      
 }
 

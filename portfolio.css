@@ -1,3 +1,7 @@
+body{
+  background-color: white; 
+  color: black !important;
+}
 /* The side navigation menu */
 .sidenav {
   height: 100%;
@@ -7,7 +11,7 @@
   /*Stayontop*/top: 0;
   left: 0;
  
-  background-color: black;
+  background-color: white;
   /*Black*/overflow-x: hidden;
   /*Disablehorizontalscroll*/padding-top: 60px;
   /*Placecontent60pxfromthetop*/transition: 0.5s;
@@ -29,7 +33,13 @@
 .sidenav a:hover, .offcanvas a:focus{
   color: #f1f1f1;
 }
+nav{
+  background-color: white; /* Black*/
 
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
 /* Position and style the close button (top right corner) */
 .closebtn {
   position: absolute;
@@ -63,10 +73,10 @@ hr{
 ul.tab {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: black;
+
+  
   height:400px;
 }
 
@@ -102,13 +112,9 @@ ul.tab li a:focus, .active {background-color: #ccc;}
   color: rgb(243, 237, 237);
   padding-top: 110px;
   font-size: 50px;
-  opacity: 0.9;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  height: 80vh;
+ 
   width: 100%;
- background: url(images/45864239_l.jpg);
+
   
 }
 #Tokyo p, h1, h2{
@@ -209,9 +215,94 @@ textarea, input{
   text-decoration: none;
   cursor: pointer;
 }
+
+
+.switchbtn {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top: 20px;
+  left: 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(23, 24, 24);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(240, 232, 232);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.dark-mode {
+    
+  background-color: rgb(201, 214, 22);
+  color: rgb(20, 18, 18);
+
+}
+.dark-mode2 {
+ background-color: rgb(20, 19, 19);
+  opacity: 0.9;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 80vh;
+  width: 100%;
+  color:red;
+
+}
+.dark-mode3 {
+    
+  background-color: rgb(201, 214, 22);
+  color: rgb(20, 18, 18);
+
+}
 #London{
-  color: rgb(241, 235, 235);
-  padding-top: 200px;
+  color: rgb(170, 21, 21);
+  padding-top: 0px;
   font-size: 35px;
   opacity: 0.9;
   background-position: center !important;
@@ -226,13 +317,7 @@ h1,p, h2{
   color: rgb(175, 33, 33);
   font-size: 40px;
 }
-nav{
-  background-color: black; /* Black*/
 
-  top: 0;
-  margin: 0;
-  padding: 0;
-}
 nav img{
   float: right;
   width: 10%;
@@ -292,4 +377,7 @@ progress::-moz-progress-bar {
   font-size: 40px;
   color: black;
   font-style: italic;
+}
+@media(min-width: 700px) {
+
 }
