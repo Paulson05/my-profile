@@ -1,0 +1,9 @@
+
+$colors:(
+    primary: red,
+    accent:blue
+
+);
+body{
+    background-color:map-get($colors, acccent);
+}
