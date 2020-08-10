@@ -4,18 +4,20 @@ $colors:(
     accent:blue
 
 );
+
 body, html{
     height:100%;
 }
-body{
+body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
-body #bg{
-    background-color: blue;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    clip-path: polygon(100% 0, 100% 82%, 40% 100%, 0 100%, 0 0);
+    margin: 0;
+
+     #bg{
+        background-color: map-get($color, primary!);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        clip-path: polygon(100% 0, 100% 82%, 40% 100%, 0 100%, 0 0);
+    }
 }
